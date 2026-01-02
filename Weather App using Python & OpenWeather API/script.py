@@ -15,7 +15,7 @@ response = requests.get(url)
 if response.status_code == 200:
     weather_data = response.json()
     weather_disc = weather_data['weather'][0]['description']
-    temp = weather_data['main']['temp'] - 273.15
+    temp = weather_data['main']['temp'] - 273.15 #converted to Celsius manually
 
     #display weather info
     print(f"Weather in {city_name}: {round(temp,2)}°C with {weather_disc}")
