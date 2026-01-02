@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 # Load variables from .env file
 load_dotenv()
 
+#
 api_key = os.getenv("OPENWEATHER_API_KEY")
 city_name = input("Enter the name of City - ")
 
