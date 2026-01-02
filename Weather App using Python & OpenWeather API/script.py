@@ -2,6 +2,7 @@ import requests
 import os
 from dotenv import load_dotenv
 
+# Load variables from .env file
 load_dotenv()
 
 api_key = os.getenv("OPENWEATHER_API_KEY")
