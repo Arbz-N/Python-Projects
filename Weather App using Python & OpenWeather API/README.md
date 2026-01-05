@@ -19,7 +19,7 @@ Features
 Project Structure
     weather-app/
     
-     -.env              # Stores API key (DO NOT upload to GitHub)
+     -.env              # Stores API key 
      -weather.py        # Main Python script
      -README.md
 
