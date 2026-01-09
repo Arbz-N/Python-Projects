@@ -21,7 +21,7 @@ Project Structure
     
      -.env              # Stores API key 
      -weather.py        # Main Python script
-     -README.md
+     -README.md         #to overview
 
 Environment Variables
 
