@@ -1,6 +1,6 @@
 import requests
 import os
-from dotenv import load_dotenv
+from dotenv import load_dotenv  #for .env file
 
 # Load variables from .env file
 load_dotenv()
