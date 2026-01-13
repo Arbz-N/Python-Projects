@@ -89,3 +89,22 @@ Sample Output
             "speed": 4.1
         }
     }
+
+### How logging works
+
+  - When the program runs, a file named **`weatherpulse.log`** is automatically created.
+  - All important events are written to this file, including:
+  - Application start
+  - API request status
+  - Errors and exceptions
+  - Successful data saves
+
+### Log File Location
+The log file is created in the **same directory** where the script is executed.
+
+weatherpulse.log
+
+    ### Example Log Output
+    
+    2026-01-12 22:41:10 - INFO - WeatherPulse CLI started...
+    2026-01-12 22:41:11 - INFO - Data successfully saved to london_weather.json
