@@ -7,7 +7,6 @@ import os
 
 load_dotenv()
 
-# ====== PLACEHOLDER FOR SENSITIVE DATA ======
 API_KEY = os.getenv("WEATHER_API_KEY")   # Your API key goes in .env file
 # ===========================================
 
