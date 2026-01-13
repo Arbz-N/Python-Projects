@@ -4,7 +4,8 @@
 ---
 
 ## Overview
-WeatherPulse CLI is a production-ready Python command-line application that retrieves real-time weather data from the OpenWeatherMap API and stores it in structured JSON format. The tool is designed for developers, system engineers, and learners who want a clean example of API integration, secure configuration handling, and professional-grade logging in a CLI environment.
+WeatherPulse CLI is a production-ready Python command-line application that retrieves real-time weather data from the OpenWeatherMap API and stores it in structured JSON format. 
+The tool is designed  who want a clean example of API integration, secure configuration handling, and professional-grade logging in a CLI environment.
 
 ---
 
@@ -42,24 +43,49 @@ Copy code
 └── README.md
 Installation
 1. Clone the repository
-bash
-Copy code
-git clone https://github.com/your-username/weatherpulse-cli.git
-cd weatherpulse-cli
+
+    git clone https://github.com/your-username/weatherpulse-cli.git
+    cd weatherpulse-cli
+    
 2. Create .env file
-env
-Copy code
-WEATHER_API_KEY=your_api_key_here
+
+    env
+    WEATHER_API_KEY=your_api_key_here
 3. Secure sensitive files
-Add this to .gitignore:
 
-bash
-Copy code
-.env
-*.log
+    Add this to .gitignore:
+    .env
+    *.log
+    
 Usage
-Run from terminal:
 
-bash
-Copy code
-python weatherpulse_cli.py --city London --file_path london_weather.json
+    Run from terminal:
+    python weatherpulse_cli.py --city London --file_path london_weather.json
+
+    Arguments
+    
+    Argument	              Description
+    --city	           City name for weather lookup
+    --file_path	       File path to save JSON output
+
+How It Works
+
+    Loads API key securely from .env
+    Builds a dynamic API request URL
+    Sends HTTP request using requests
+    Validates response and handles errors
+    Writes structured JSON output
+    Logs all activities in weatherpulse.log
+
+Sample Output
+
+    {
+        "weather": [...],
+        "main": {
+            "temp": 300.15,
+            "humidity": 61
+        },
+        "wind": {
+            "speed": 4.1
+        }
+    }
