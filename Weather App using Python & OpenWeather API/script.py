@@ -7,7 +7,7 @@ load_dotenv()
 
 #
 api_key = os.getenv("OPENWEATHER_API_KEY") #fetch from .env file
-city_name = input("Enter the name of City - ") #to get user input
+city_name = input("Enter the name of City - ") #to get user input#
 
 
 url = f'https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}'
