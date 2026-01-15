@@ -2,7 +2,7 @@ Weather App using Python & OpenWeather API
 
     This project is a simple Python-based weather application that fetches real-time weather information for any city using the OpenWeather API.
 
-It demonstrates how to:
+It demonstrates how to::
 
     Use environment variables securely with a .env file
     Call a public REST API using requests
